@@ -2,6 +2,7 @@
     "prefix": "?",
     "token": "INSERT TOKEN HERE",
     "extensions": [
-        "extensions.misc"
+        "extensions.misc",
+        "extensions.rng"
     ]
 }

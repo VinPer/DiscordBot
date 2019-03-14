@@ -25,8 +25,8 @@ STARTUP_EXT = data["extensions"]
 LOOP = asyncio.get_event_loop()
 
 client = Bot(command_prefix=BOT_PREFIX,
-             description='A generic bot to test functionality with the\
-             discord.py API')
+             description="A generic bot to test functionality with the" +
+                         "discord.py API")
 
 
 @client.event
@@ -85,8 +85,8 @@ async def reload(context):
                 exc = '{}: {}'.format(type(e).__name__, e)
                 print('Failed to operate extension {}\n{}'.format(exten, exc))
     else:
-        print("User " + context.message.author.name + " attempted to reload \
-            extensions")
+        print("User " + context.message.author.name + " attempted to reload" +
+              "extensions")
 
 """
 Loads extensions through the STARTUP_EXT array. Extensions are .py

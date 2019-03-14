@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import discord
-import asyncio
 
 from discord.ext import commands
 
@@ -21,7 +20,7 @@ class Misc:
     """
     @commands.command(name='repeat',
                       description='Repeats the given phrase.',
-                      aliases=['r'],
+                      aliases=['rp'],
                       pass_context=True)
     async def repeat(self, context):
         client = self.client
@@ -41,8 +40,8 @@ class Misc:
     Implements itself through an embed.
     """
     @commands.command(name="summon",
-                      description="A quick command to summon your own or \
-                          someone's avatar.",
+                      description="A quick command to summon your own or" +
+                                  "someone's avatar.",
                       pass_context=True)
     async def summon(self, context):
         client = self.client
