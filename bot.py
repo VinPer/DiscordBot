@@ -84,6 +84,9 @@ async def reload(context):
             except Exception as e:
                 exc = '{}: {}'.format(type(e).__name__, e)
                 print('Failed to operate extension {}\n{}'.format(exten, exc))
+        if client.is_voice_connected(context.message.server):
+            await client.voice_client_in(context.message.server).disconnect()
+            print("Disconnected from voice channel.")
     else:
         print("User " + context.message.author.name + " attempted to reload" +
               "extensions")

@@ -21,3 +21,10 @@ The RNG module plays around with randomly generated numbers.
 **eight_ball**: answers a yes or no question randomly using a set of predetermined answers.  
 **roll**: simulates a dice roll in a NdN or NdN+N format.  
 **choose**: chooses between a set of text choices that the user provides.
+
+## Voice module
+The voice module explores voice call functionality for playing audio.
+
+**play**: accepts a Youtube link and plays it in a voice channel.  
+**stop**: stops the currently playing audio.  
+**volume**: adjusts the volume of the currently playing audio.

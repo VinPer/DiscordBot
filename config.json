@@ -3,6 +3,7 @@
     "token": "INSERT TOKEN HERE",
     "extensions": [
         "extensions.misc",
-        "extensions.rng"
+        "extensions.rng",
+        "extensions.voice"
     ]
 }
